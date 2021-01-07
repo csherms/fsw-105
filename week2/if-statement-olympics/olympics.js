@@ -7,8 +7,8 @@ if (i > 3) {
 
     
 // Write an if statement that prints "is the length" if the length of "cat" is 3.
-var catlength = 3;
-if (catlength == 3) {
+var catlength = "cat";
+if (catlength.length == 3) {
     console.log ("the cat's length is 3");
 }
 
@@ -47,7 +47,7 @@ if (person.firstLetterB == true) {
     console.log ("Your name begins with the letter B, but alas, you are not 18...");
 }
 // If person's name begins with "B" and is 18 or older.
-if (person.age >= 18 && person.firstLetterB == true) {
+else if (person.age >= 18 && person.firstLetterB == true) {
     console.log ("Congratulations! You fit the all the requirements to see this movie!");
 }
 // This is the else statement for both the age, and the first letter requirements.
@@ -61,10 +61,10 @@ else {
 
 // Silver Medal Start:
 /* Write an if/else if/else statement that prints "strict" if 1 strictly equals "1", prints "loose" or "abstract" if 1 equals "1" without type checking, and prints "not equal at all" if it doesn't print the other stuff. */
-var number = 2
-if (number == 1) {
+var number = "1"
+if (number === "1") {
 console.log ("strict");
-} else if (number <= 3) {
+} else if (number == 1) {
   console.log ("abstract");
 } else {
   console.log ("not equal at all");
